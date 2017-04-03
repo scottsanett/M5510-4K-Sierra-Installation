@@ -521,19 +521,13 @@
 		<array>
 			<dict>
 				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>ApIst</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>Ther_Rvp</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
 				<string>DMAR</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>SSDT</string>
+				<key>TableId</key>
+				<string>ApCst</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
@@ -545,13 +539,13 @@
 				<key>Signature</key>
 				<string>SSDT</string>
 				<key>TableId</key>
-				<string>Cpu0Ist</string>
+				<string>Cpu0Cst</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
 				<string>SSDT</string>
 				<key>TableId</key>
-				<string>Cpu0Cst</string>
+				<string>ApIst</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
@@ -561,13 +555,19 @@
 			</dict>
 			<dict>
 				<key>Signature</key>
+				<string>SSDT</string>
+				<key>TableId</key>
+				<string>Ther_Rvp</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
 				<string>#MCFG</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
 				<string>SSDT</string>
 				<key>TableId</key>
-				<string>ApCst</string>
+				<string>Cpu0Ist</string>
 			</dict>
 		</array>
 		<key>SSDT</key>
@@ -610,10 +610,10 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Key</key>
-				<string>AAPL00,PanelCycleDelay</string>
+				<string>AAPL00,PanelPowerOn</string>
 				<key>Value</key>
 				<data>
-				+gAAAA==
+				GQEAAA==
 				</data>
 			</dict>
 			<dict>
@@ -634,46 +634,10 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Key</key>
-				<string>device-colors</string>
-				<key>Value</key>
-				<data>
-				AAIAAKCdnQAAAAAAAAAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>IntelGFX</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
 				<string>AAPL00,PanelPowerDown</string>
 				<key>Value</key>
 				<data>
 				PAAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>IntelGFX</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>AAPL,Gfx324</string>
-				<key>Value</key>
-				<data>
-				AQAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>IntelGFX</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>AAPL00,PanelPowerOn</string>
-				<key>Value</key>
-				<data>
-				GQEAAA==
 				</data>
 			</dict>
 			<dict>
@@ -694,10 +658,46 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Key</key>
+				<string>AAPL00,PanelCycleDelay</string>
+				<key>Value</key>
+				<data>
+				+gAAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>IntelGFX</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
 				<string>AAPL00,PanelPowerUp</string>
 				<key>Value</key>
 				<data>
 				MAAAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>IntelGFX</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>device-colors</string>
+				<key>Value</key>
+				<data>
+				AAIAAKCdnQAAAAAAAAAAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>IntelGFX</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>AAPL,Gfx324</string>
+				<key>Value</key>
+				<data>
+				AQAAAA==
 				</data>
 			</dict>
 		</array>
@@ -1088,10 +1088,6 @@
 		<true/>
 		<key>ProductName</key>
 		<string>MacBookPro13,3</string>
-		<key>SerialNumber</key>
-		<string>C02MQ60QFGYY</string>
-		<key>SmUUID</key>
-		<string>6CFE5564-2280-58EC-B0A9-A8F9BE5EE6EF</string>
 		<key>Trust</key>
 		<false/>
 		<key>Version</key>
@@ -1099,8 +1095,6 @@
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
-		<key>CustomUUID</key>
-		<string>52D5EB8C-2E10-F25F-912B-5613F35861FB</string>
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>
