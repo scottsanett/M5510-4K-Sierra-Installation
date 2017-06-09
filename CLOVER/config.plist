@@ -18,11 +18,23 @@
 				<true/>
 				<key>FixIPIC_0040</key>
 				<true/>
-				<key>NewWay_80000000</key>
-				<true/>
 			</dict>
 			<key>Patches</key>
 			<array>
+				<dict>
+					<key>Comment</key>
+					<string>Redirect _E42 call to solve recursion issue for USB-C hotplug, pair with SSDT-XE42 - dpassmor</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RFBURgFfRTQy
+					</data>
+					<key>Replace</key>
+					<data>
+					RFBURgFYRTQy
+					</data>
+				</dict>
 				<dict>
 					<key>Comment</key>
 					<string>rename HPET to XPET,  pair with SSDT-HPET.aml</string>
@@ -521,37 +533,7 @@
 		<array>
 			<dict>
 				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>xh_rvp10</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>Cpu0Ist</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
 				<string>DMAR</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>Ther_Rvp</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>ApCst</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>Cpu0Cst</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
@@ -567,7 +549,37 @@
 			</dict>
 			<dict>
 				<key>Signature</key>
+				<string>SSDT</string>
+				<key>TableId</key>
+				<string>ApCst</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>SSDT</string>
+				<key>TableId</key>
+				<string>Ther_Rvp</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
 				<string>#MCFG</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>SSDT</string>
+				<key>TableId</key>
+				<string>Cpu0Cst</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>SSDT</string>
+				<key>TableId</key>
+				<string>xh_rvp10</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>SSDT</string>
+				<key>TableId</key>
+				<string>Cpu0Ist</string>
 			</dict>
 		</array>
 		<key>SSDT</key>
@@ -575,7 +587,12 @@
 			<key>DropOem</key>
 			<false/>
 			<key>Generate</key>
-			<false/>
+			<dict>
+				<key>CStates</key>
+				<false/>
+				<key>PStates</key>
+				<false/>
+			</dict>
 			<key>PluginType</key>
 			<integer>1</integer>
 		</dict>
@@ -583,9 +600,11 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>-v slide=0 dart=0 nv_disable=1 kext-dev-mode=1</string>
+		<string>slide=0 dart=0 nv_disable=1 kext-dev-mode=1</string>
 		<key>Debug</key>
 		<false/>
+		<key>DefaultVolume</key>
+		<string>Macintosh HD</string>
 		<key>Legacy</key>
 		<string>LegacyBiosDefault</string>
 		<key>Secure</key>
@@ -610,46 +629,10 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Key</key>
-				<string>AAPL00,PanelPowerUp</string>
+				<string>AAPL00,PanelPowerDown</string>
 				<key>Value</key>
 				<data>
-				MAAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>IntelGFX</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>AAPL00,PanelCycleDelay</string>
-				<key>Value</key>
-				<data>
-				+gAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>IntelGFX</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>AAPL00,PanelPowerOff</string>
-				<key>Value</key>
-				<data>
-				EQAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>IntelGFX</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>AAPL,GfxYTile</string>
-				<key>Value</key>
-				<data>
-				AQAAAA==
+				PAAAAA==
 				</data>
 			</dict>
 			<dict>
@@ -670,7 +653,7 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Key</key>
-				<string>AAPL,Gfx324</string>
+				<string>AAPL,GfxYTile</string>
 				<key>Value</key>
 				<data>
 				AQAAAA==
@@ -682,10 +665,10 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Key</key>
-				<string>AAPL00,PanelPowerDown</string>
+				<string>AAPL00,PanelPowerUp</string>
 				<key>Value</key>
 				<data>
-				PAAAAA==
+				MAAAAA==
 				</data>
 			</dict>
 			<dict>
@@ -700,7 +683,48 @@
 				AAIAAKCdnQAAAAAAAAAAAA==
 				</data>
 			</dict>
+			<dict>
+				<key>Device</key>
+				<string>IntelGFX</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>AAPL,Gfx324</string>
+				<key>Value</key>
+				<data>
+				AQAAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>IntelGFX</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>AAPL00,PanelPowerOff</string>
+				<key>Value</key>
+				<data>
+				EQAAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>IntelGFX</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>AAPL00,PanelCycleDelay</string>
+				<key>Value</key>
+				<data>
+				+gAAAA==
+				</data>
+			</dict>
 		</array>
+		<key>Audio</key>
+		<dict>
+			<key>Inject</key>
+			<string>13</string>
+		</dict>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
@@ -761,8 +785,6 @@
 			<key>Tool</key>
 			<true/>
 		</dict>
-		<key>ScreenResolution</key>
-		<string>1920x1080</string>
 		<key>Theme</key>
 		<string>BGM</string>
 	</dict>
@@ -1063,21 +1085,23 @@
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>IM171.88Z.0105.B15.1612221002</string>
+		<string>MBP133.88Z.0226.B11.1612220123</string>
 		<key>Board-ID</key>
-		<string>Mac-B809C3757DA9BB8D</string>
+		<string>Mac-A5C67F76ED83108C</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
+		<key>BoardSerialNumber</key>
+		<string>C02420304DCFJYL14</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>ChassisAssetTag</key>
-		<string>iMac-Aluminum</string>
+		<string>MacBook-Aluminum</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
-		<string>0x13</string>
+		<string>0x09</string>
 		<key>Family</key>
-		<string>iMac</string>
+		<string>MacBook Pro</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
@@ -1085,9 +1109,11 @@
 		<key>Mobile</key>
 		<true/>
 		<key>ProductName</key>
-		<string>iMac17,1</string>
+		<string>MacBookPro13,3</string>
 		<key>SerialNumber</key>
-		<string>C02QMNHKH2YQ</string>
+		<string>C02MQ60QFGYY</string>
+		<key>SmUUID</key>
+		<string>6CFE5564-2280-58EC-B0A9-A8F9BE5EE6EF</string>
 		<key>Trust</key>
 		<false/>
 		<key>Version</key>
@@ -1095,6 +1121,8 @@
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
+		<key>CustomUUID</key>
+		<string>52D5EB8C-2E10-F25F-912B-5613F35861FB</string>
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>
