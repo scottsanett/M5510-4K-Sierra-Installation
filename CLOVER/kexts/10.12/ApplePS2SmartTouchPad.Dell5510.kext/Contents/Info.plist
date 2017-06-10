@@ -936,7 +936,7 @@
 						<key>Inertial2FingScroll</key>
 						<true/>
 						<key>ScrollSmoothSamples</key>
-						<integer>3</integer>
+						<integer>5</integer>
 						<key>Sling2FingScroll</key>
 						<false/>
 					</dict>
@@ -989,7 +989,7 @@
 						<false/>
 					</dict>
 					<key>InertialScrollDelay</key>
-					<integer>1</integer>
+					<integer>0</integer>
 					<key>InertialScrollDepth</key>
 					<integer>3</integer>
 					<key>NoInertiaForHScroll</key>
@@ -1020,9 +1020,9 @@
 					<key>ScrollLevelGranularity</key>
 					<integer>30</integer>
 					<key>ScrollMaxIdleDetectTimeout</key>
-					<integer>10</integer>
+					<integer>0</integer>
 					<key>ScrollMaxIdleStateDelta</key>
-					<integer>1</integer>
+					<integer>0</integer>
 					<key>ScrollResolution</key>
 					<dict>
 						<key>ELANv2</key>
