@@ -934,7 +934,7 @@
 						<key>Inertial2FingScroll</key>
 						<true/>
 						<key>ScrollSmoothSamples</key>
-						<integer>15</integer>
+						<integer>10</integer>
 						<key>Sling2FingScroll</key>
 						<false/>
 					</dict>
@@ -997,30 +997,30 @@
 					<key>ScrollDirectionSamples</key>
 					<dict>
 						<key>ELANv2</key>
-						<integer>3</integer>
+						<integer>0</integer>
 						<key>ELANv3</key>
-						<integer>5</integer>
+						<integer>0</integer>
 						<key>ELANv4</key>
-						<integer>5</integer>
+						<integer>0</integer>
 						<key>ELANv4ClickPad</key>
-						<integer>5</integer>
+						<integer>0</integer>
 						<key>FocalTech</key>
-						<integer>5</integer>
+						<integer>0</integer>
 						<key>Synaptics</key>
-						<integer>5</integer>
+						<integer>0</integer>
 						<key>SynapticsClickPad</key>
-						<integer>5</integer>
+						<integer>0</integer>
 					</dict>
 					<key>ScrollLevelAtBoot</key>
 					<integer>0</integer>
 					<key>ScrollLevelFactor</key>
 					<integer>0</integer>
 					<key>ScrollLevelGranularity</key>
-					<integer>30</integer>
+					<integer>40</integer>
 					<key>ScrollMaxIdleDetectTimeout</key>
 					<integer>0</integer>
 					<key>ScrollMaxIdleStateDelta</key>
-					<integer>0</integer>
+					<integer>100</integer>
 					<key>ScrollResolution</key>
 					<dict>
 						<key>ELANv2</key>
