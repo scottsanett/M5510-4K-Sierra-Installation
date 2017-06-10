@@ -817,11 +817,11 @@
 					<key>DisableTrackPointButton</key>
 					<false/>
 					<key>EnhancedAccelerationLevel</key>
-					<integer>1</integer>
+					<integer>15</integer>
 					<key>EnhancedAccelerationMinDelta</key>
 					<integer>15</integer>
 					<key>HIDTrackpadAccelLevel</key>
-					<integer>8</integer>
+					<integer>15</integer>
 					<key>PointerCustomAcceleration</key>
 					<dict>
 						<key>ELANv2</key>
@@ -835,8 +835,6 @@
 						<key>Synaptics</key>
 						<integer>16</integer>
 					</dict>
-					<key>PointerCustomAcceleration2</key>
-					<dict/>
 					<key>PointerResolution</key>
 					<dict>
 						<key>ELANv2</key>
@@ -936,7 +934,7 @@
 						<key>Inertial2FingScroll</key>
 						<true/>
 						<key>ScrollSmoothSamples</key>
-						<integer>5</integer>
+						<integer>15</integer>
 						<key>Sling2FingScroll</key>
 						<false/>
 					</dict>
