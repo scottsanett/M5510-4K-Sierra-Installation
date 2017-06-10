@@ -989,7 +989,7 @@
 						<false/>
 					</dict>
 					<key>InertialScrollDelay</key>
-					<integer>15</integer>
+					<integer>1</integer>
 					<key>InertialScrollDepth</key>
 					<integer>3</integer>
 					<key>NoInertiaForHScroll</key>
@@ -1022,7 +1022,7 @@
 					<key>ScrollMaxIdleDetectTimeout</key>
 					<integer>10</integer>
 					<key>ScrollMaxIdleStateDelta</key>
-					<integer>10</integer>
+					<integer>1</integer>
 					<key>ScrollResolution</key>
 					<dict>
 						<key>ELANv2</key>
