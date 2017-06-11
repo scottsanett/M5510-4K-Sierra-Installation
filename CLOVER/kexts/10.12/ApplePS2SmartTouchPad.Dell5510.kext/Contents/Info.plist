@@ -817,9 +817,9 @@
 					<key>DisableTrackPointButton</key>
 					<false/>
 					<key>EnhancedAccelerationLevel</key>
-					<integer>15</integer>
+					<integer>10</integer>
 					<key>EnhancedAccelerationMinDelta</key>
-					<integer>15</integer>
+					<integer>200</integer>
 					<key>HIDTrackpadAccelLevel</key>
 					<integer>15</integer>
 					<key>PointerCustomAcceleration</key>
@@ -934,7 +934,7 @@
 						<key>Inertial2FingScroll</key>
 						<true/>
 						<key>ScrollSmoothSamples</key>
-						<integer>10</integer>
+						<integer>20</integer>
 						<key>Sling2FingScroll</key>
 						<false/>
 					</dict>
@@ -987,7 +987,7 @@
 						<false/>
 					</dict>
 					<key>InertialScrollDelay</key>
-					<integer>0</integer>
+					<integer>10</integer>
 					<key>InertialScrollDepth</key>
 					<integer>3</integer>
 					<key>NoInertiaForHScroll</key>
@@ -997,19 +997,19 @@
 					<key>ScrollDirectionSamples</key>
 					<dict>
 						<key>ELANv2</key>
-						<integer>0</integer>
+						<integer>1</integer>
 						<key>ELANv3</key>
-						<integer>0</integer>
+						<integer>1</integer>
 						<key>ELANv4</key>
-						<integer>0</integer>
+						<integer>1</integer>
 						<key>ELANv4ClickPad</key>
-						<integer>0</integer>
+						<integer>1</integer>
 						<key>FocalTech</key>
-						<integer>0</integer>
+						<integer>1</integer>
 						<key>Synaptics</key>
-						<integer>0</integer>
+						<integer>1</integer>
 						<key>SynapticsClickPad</key>
-						<integer>0</integer>
+						<integer>1</integer>
 					</dict>
 					<key>ScrollLevelAtBoot</key>
 					<integer>0</integer>
@@ -1018,7 +1018,7 @@
 					<key>ScrollLevelGranularity</key>
 					<integer>50</integer>
 					<key>ScrollMaxIdleDetectTimeout</key>
-					<integer>100</integer>
+					<integer>0</integer>
 					<key>ScrollMaxIdleStateDelta</key>
 					<integer>100</integer>
 					<key>ScrollResolution</key>
@@ -1037,7 +1037,7 @@
 						<integer>400</integer>
 					</dict>
 					<key>ScrollStopDetectSamples</key>
-					<integer>1</integer>
+					<integer>10</integer>
 					<key>SlingScrollStartTimeOut</key>
 					<integer>800</integer>
 					<key>SlingTriggerArea</key>
@@ -1092,9 +1092,9 @@
 					<key>EdgeSwipesResetPointer</key>
 					<true/>
 					<key>MultiFingerSwipesDeltaX</key>
-					<integer>700</integer>
+					<integer>500</integer>
 					<key>MultiFingerSwipesDeltaY</key>
-					<integer>700</integer>
+					<integer>500</integer>
 				</dict>
 				<key>Tapping</key>
 				<dict>
