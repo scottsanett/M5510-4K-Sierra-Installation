@@ -798,9 +798,9 @@
 					<key>Rotation</key>
 					<true/>
 					<key>RotationDelta</key>
-					<integer>350</integer>
+					<integer>250</integer>
 					<key>RotationMaxCFingDelta</key>
-					<integer>85</integer>
+					<integer>100</integer>
 					<key>RotationMinCFingIdleTime</key>
 					<integer>500</integer>
 					<key>TPadStatusCheckPollRate</key>
