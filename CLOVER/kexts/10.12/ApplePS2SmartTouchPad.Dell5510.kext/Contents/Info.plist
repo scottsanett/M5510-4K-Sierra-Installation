@@ -620,7 +620,7 @@
 				<key>Buttons</key>
 				<dict>
 					<key>2FingersClickAction</key>
-					<integer>2</integer>
+					<integer>0</integer>
 					<key>ClickpadVirtualButtons</key>
 					<true/>
 					<key>ClickpadVirtualButtonsArea</key>
@@ -669,13 +669,13 @@
 				<key>FingersPress</key>
 				<dict>
 					<key>2FingersPressAction</key>
-					<integer>18</integer>
+					<integer>0</integer>
 					<key>3FingersPressAction</key>
-					<integer>19</integer>
+					<integer>0</integer>
 					<key>4FingersPressAction</key>
-					<integer>31</integer>
+					<integer>30</integer>
 					<key>5FingersPressAction</key>
-					<integer>29</integer>
+					<integer>31</integer>
 					<key>FingersPressTimeOut</key>
 					<integer>700</integer>
 				</dict>
@@ -712,7 +712,7 @@
 					<key>4FingersPinchAction</key>
 					<integer>0</integer>
 					<key>5FingersPinchAction</key>
-					<integer>0</integer>
+					<integer>29</integer>
 					<key>CircularRotate</key>
 					<false/>
 					<key>DisableTPadOnLIDClose</key>
@@ -1050,9 +1050,9 @@
 					<key>3FingerSwipeDownAction</key>
 					<integer>25</integer>
 					<key>3FingerSwipeLeftAction</key>
-					<integer>27</integer>
+					<integer>12</integer>
 					<key>3FingerSwipeRightAction</key>
-					<integer>28</integer>
+					<integer>11</integer>
 					<key>3FingerSwipeUpAction</key>
 					<integer>4</integer>
 					<key>3FingerSwipes</key>
@@ -1068,11 +1068,11 @@
 					<key>4FingerSwipes</key>
 					<true/>
 					<key>EdgeSwipeBottom</key>
-					<integer>24</integer>
+					<integer>28</integer>
 					<key>EdgeSwipeDeltaX</key>
-					<integer>50</integer>
+					<integer>25</integer>
 					<key>EdgeSwipeDeltaY</key>
-					<integer>60</integer>
+					<integer>30</integer>
 					<key>EdgeSwipeFingers</key>
 					<integer>2</integer>
 					<key>EdgeSwipeLeft</key>
@@ -1084,7 +1084,7 @@
 					<key>EdgeSwipeSenseVArea</key>
 					<integer>5</integer>
 					<key>EdgeSwipeTop</key>
-					<integer>30</integer>
+					<integer>27</integer>
 					<key>EdgeSwipes</key>
 					<true/>
 					<key>EdgeSwipes2Ways</key>
