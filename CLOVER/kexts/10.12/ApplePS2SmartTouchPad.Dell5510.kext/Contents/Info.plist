@@ -1084,7 +1084,7 @@
 					<key>EdgeSwipeSenseVArea</key>
 					<integer>5</integer>
 					<key>EdgeSwipeTop</key>
-					<integer>5</integer>
+					<integer>30</integer>
 					<key>EdgeSwipes</key>
 					<true/>
 					<key>EdgeSwipes2Ways</key>
@@ -1126,9 +1126,9 @@
 					<key>3FingersTapAction</key>
 					<integer>34</integer>
 					<key>4FingersTapAction</key>
-					<integer>32</integer>
+					<integer>1</integer>
 					<key>5FingersTapAction</key>
-					<integer>20</integer>
+					<integer>32</integer>
 					<key>CornerTapAreaHeight</key>
 					<integer>10</integer>
 					<key>CornerTapAreaLength</key>
