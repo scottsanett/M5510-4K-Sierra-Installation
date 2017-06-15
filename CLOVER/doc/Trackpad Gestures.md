@@ -2,7 +2,7 @@
 ###Taps:
 * 2 finger tap: right click 
 * 3 finger tap: quick look / preview / look up in the dictionary
-* 4 finger tap: applications switch
+* 4 finger tap: application windows
 * 5 finger tap: launchpad
 
 
@@ -15,16 +15,16 @@
 
 ###Swipes:
 ####Edge:
-* top edge swipe down: go to next tab (in safari)
-* bottom edge swipe up: go to previous tab (in safari)
+* top edge swipe down: mission control
+* bottom edge swipe up: application switcher
 * right edge swipe left: notification enter
 * left edge swipe right: show desktop
 
 ####3 Fingers:
 * 3 finger swipe left: go forward (in safari/finder or other apps that support it)
 * 3 finger swipe right: go backward (ditto)
-* 3 finger swipe up: mission control
-* 3 finger swipe down: application windows
+* 3 finger swipe up: go to previous tab (ditto)
+* 3 finger swipe down: go to next tab (ditto)
 
 ####4 Fingers:
 * 4 finger swipe left: go to next workspace
