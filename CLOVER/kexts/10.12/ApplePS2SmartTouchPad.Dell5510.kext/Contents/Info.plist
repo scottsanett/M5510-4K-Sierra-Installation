@@ -802,7 +802,7 @@
 					<key>RotationMaxCFingDelta</key>
 					<integer>100</integer>
 					<key>RotationMinCFingIdleTime</key>
-					<integer>500</integer>
+					<integer>250</integer>
 					<key>TPadStatusCheckPollRate</key>
 					<integer>1500</integer>
 					<key>UseSynapticsGenericBounds</key>
@@ -1079,10 +1079,10 @@
 					<integer>13</integer>
 					<key>EdgeSwipeRight</key>
 					<integer>23</integer>
-					<key>EdgeSwipeSenseHArea</key>
-					<integer>7</integer>
 					<key>EdgeSwipeSenseVArea</key>
-					<integer>5</integer>
+					<integer>10</integer>
+					<key>EdgeSwipeSenseHArea</key>
+					<integer>10</integer>
 					<key>EdgeSwipeTop</key>
 					<integer>27</integer>
 					<key>EdgeSwipes</key>
