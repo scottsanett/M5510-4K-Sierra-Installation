@@ -23,8 +23,6 @@
 ####3 Fingers:
 * 3 finger swipe left: go forward (in safari/finder or other apps that support it)
 * 3 finger swipe right: go backward (ditto)
-* 3 finger swipe up: go to previous tab (ditto)
-* 3 finger swipe down: go to next tab (ditto)
 
 ####4 Fingers:
 * 4 finger swipe left: go to next workspace
