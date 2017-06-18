@@ -673,9 +673,9 @@
 					<key>3FingersPressAction</key>
 					<integer>0</integer>
 					<key>4FingersPressAction</key>
-					<integer>30</integer>
+					<integer>25</integer>
 					<key>5FingersPressAction</key>
-					<integer>31</integer>
+					<integer>5</integer>
 					<key>FingersPressTimeOut</key>
 					<integer>700</integer>
 				</dict>
@@ -1126,9 +1126,9 @@
 					<key>3FingersTapAction</key>
 					<integer>32</integer>
 					<key>4FingersTapAction</key>
-					<integer>25</integer>
+					<integer>31</integer>
 					<key>5FingersTapAction</key>
-					<integer>5</integer>
+					<integer>30</integer>
 					<key>CornerTapAreaHeight</key>
 					<integer>10</integer>
 					<key>CornerTapAreaLength</key>

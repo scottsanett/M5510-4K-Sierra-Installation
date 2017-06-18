@@ -63,9 +63,9 @@
 				<key>F21</key>
 				<string>CMD Q</string>
 				<key>F22</key>
-				<string>CMD H</string>
-				<key>F23</key>
 				<string>CMD W</string>
+				<key>F23</key>
+				<string>CMD H</string>
 				<key>F24</key>
 				<string>CTRL CMD D</string>
 			</dict>
