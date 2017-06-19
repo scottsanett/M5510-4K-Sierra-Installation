@@ -974,7 +974,7 @@
 						<key>EdgeHScrollArea</key>
 						<integer>10</integer>
 						<key>EdgeScrollAccelMode</key>
-						<integer>4</integer>
+						<integer>3</integer>
 						<key>EdgeScrolling</key>
 						<true/>
 						<key>EdgeVScrollAdaptArea</key>
