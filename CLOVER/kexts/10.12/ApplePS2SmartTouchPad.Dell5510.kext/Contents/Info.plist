@@ -1014,9 +1014,9 @@
 					<key>ScrollLevelAtBoot</key>
 					<integer>0</integer>
 					<key>ScrollLevelFactor</key>
-					<integer>0</integer>
+					<integer>1</integer>
 					<key>ScrollLevelGranularity</key>
-					<integer>30</integer>
+					<integer>40</integer>
 					<key>ScrollMaxIdleDetectTimeout</key>
 					<integer>500</integer>
 					<key>ScrollMaxIdleStateDelta</key>
