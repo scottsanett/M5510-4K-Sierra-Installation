@@ -1116,8 +1116,6 @@
 		<string>C02MQ60QFGYY</string>
 		<key>SmUUID</key>
 		<string>6CFE5564-2280-58EC-B0A9-A8F9BE5EE6EF</string>
-		<key>Trust</key>
-		<false/>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
