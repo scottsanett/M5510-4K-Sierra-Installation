@@ -930,7 +930,7 @@
 						<key>Auto2FingScroll</key>
 						<false/>
 						<key>Continuous2FingScroll</key>
-						<false/>
+						<true/>
 						<key>Inertial2FingScroll</key>
 						<true/>
 						<key>ScrollSmoothSamples</key>
@@ -976,13 +976,13 @@
 						<key>EdgeScrollAccelMode</key>
 						<integer>4</integer>
 						<key>EdgeScrolling</key>
-						<false/>
+						<true/>
 						<key>EdgeVScrollAdaptArea</key>
 						<integer>4</integer>
 						<key>EdgeVScrollArea</key>
 						<integer>8</integer>
 						<key>InertialEdgeScroll</key>
-						<true/>
+						<false/>
 						<key>SlingEdgeScroll</key>
 						<false/>
 					</dict>
@@ -1016,11 +1016,11 @@
 					<key>ScrollLevelFactor</key>
 					<integer>0</integer>
 					<key>ScrollLevelGranularity</key>
-					<integer>50</integer>
+					<integer>30</integer>
 					<key>ScrollMaxIdleDetectTimeout</key>
-					<integer>0</integer>
+					<integer>500</integer>
 					<key>ScrollMaxIdleStateDelta</key>
-					<integer>100</integer>
+					<integer>10</integer>
 					<key>ScrollResolution</key>
 					<dict>
 						<key>ELANv2</key>
