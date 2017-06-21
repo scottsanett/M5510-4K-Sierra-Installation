@@ -987,7 +987,7 @@
 						<false/>
 					</dict>
 					<key>InertialScrollDelay</key>
-					<integer>10</integer>
+					<integer>8</integer>
 					<key>InertialScrollDepth</key>
 					<integer>3</integer>
 					<key>NoInertiaForHScroll</key>
@@ -1018,7 +1018,7 @@
 					<key>ScrollLevelGranularity</key>
 					<integer>40</integer>
 					<key>ScrollMaxIdleDetectTimeout</key>
-					<integer>500</integer>
+					<integer>1000</integer>
 					<key>ScrollMaxIdleStateDelta</key>
 					<integer>10</integer>
 					<key>ScrollResolution</key>
@@ -1080,9 +1080,9 @@
 					<key>EdgeSwipeRight</key>
 					<integer>23</integer>
 					<key>EdgeSwipeSenseVArea</key>
-					<integer>5</integer>
+					<integer>1</integer>
 					<key>EdgeSwipeSenseHArea</key>
-					<integer>10</integer>
+					<integer>1</integer>
 					<key>EdgeSwipeTop</key>
 					<integer>4</integer>
 					<key>EdgeSwipes</key>
