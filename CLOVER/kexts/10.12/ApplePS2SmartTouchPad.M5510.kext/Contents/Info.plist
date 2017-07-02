@@ -637,7 +637,7 @@
 					<key>DragFingerIDToUseForData</key>
 					<integer>1</integer>
 					<key>DragFingersNum</key>
-					<integer>7</integer>
+					<integer>5</integer>
 					<key>DragLock</key>
 					<false/>
 					<key>Enable</key>
@@ -694,7 +694,7 @@
 					<key>TapEnablesTPadFromAccInput</key>
 					<false/>
 					<key>TimeOutEnablesTPadAfterAccInput</key>
-					<integer>1000</integer>
+					<integer>0</integer>
 					<key>TriggerAccInputForKeyPressCount</key>
 					<integer>2</integer>
 				</dict>
@@ -813,15 +813,15 @@
 					<key>AccelerationPrefValue</key>
 					<integer>0</integer>
 					<key>Clickpad2FingersMove</key>
-					<true/>
-					<key>DisableTrackPointButton</key>
 					<false/>
+					<key>DisableTrackPointButton</key>
+					<true/>
 					<key>EnhancedAccelerationLevel</key>
-					<integer>10</integer>
+					<integer>1</integer>
 					<key>EnhancedAccelerationMinDelta</key>
-					<integer>200</integer>
-					<key>HIDTrackpadAccelLevel</key>
 					<integer>15</integer>
+					<key>HIDTrackpadAccelLevel</key>
+					<integer>7</integer>
 					<key>PointerCustomAcceleration</key>
 					<dict>
 						<key>ELANv2</key>
@@ -987,7 +987,7 @@
 						<false/>
 					</dict>
 					<key>InertialScrollDelay</key>
-					<integer>8</integer>
+					<integer>15</integer>
 					<key>InertialScrollDepth</key>
 					<integer>3</integer>
 					<key>NoInertiaForHScroll</key>
@@ -1068,7 +1068,7 @@
 					<key>4FingerSwipes</key>
 					<true/>
 					<key>EdgeSwipeBottom</key>
-					<integer>1</integer>
+					<integer>13</integer>
 					<key>EdgeSwipeDeltaX</key>
 					<integer>25</integer>
 					<key>EdgeSwipeDeltaY</key>
@@ -1076,7 +1076,7 @@
 					<key>EdgeSwipeFingers</key>
 					<integer>2</integer>
 					<key>EdgeSwipeLeft</key>
-					<integer>13</integer>
+					<integer>1</integer>
 					<key>EdgeSwipeRight</key>
 					<integer>23</integer>
 					<key>EdgeSwipeSenseVArea</key>
