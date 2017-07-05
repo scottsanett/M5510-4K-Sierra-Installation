@@ -7,8 +7,8 @@
 
 
 ###Presses:
-* 4 finger press: application windows
-* 5 finger press: launchpad
+* 4 finger press: launchpad
+* 5 finger press: application windows
 
 ###Pinches:
 * 5 finger pinch: quit application (CMD + Q)
