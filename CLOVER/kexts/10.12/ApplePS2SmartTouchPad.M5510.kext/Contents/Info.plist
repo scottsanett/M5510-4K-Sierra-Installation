@@ -694,7 +694,7 @@
 					<key>TapEnablesTPadFromAccInput</key>
 					<false/>
 					<key>TimeOutEnablesTPadAfterAccInput</key>
-					<integer>0</integer>
+					<integer>200</integer>
 					<key>TriggerAccInputForKeyPressCount</key>
 					<integer>2</integer>
 				</dict>
@@ -781,9 +781,9 @@
 						<key>FocalTech</key>
 						<integer>10</integer>
 						<key>Synaptics</key>
-						<integer>8</integer>
+						<integer>5</integer>
 						<key>SynapticsClickPad</key>
-						<integer>8</integer>
+						<integer>5</integer>
 					</dict>
 					<key>PalmDetection</key>
 					<true/>
@@ -987,7 +987,7 @@
 						<false/>
 					</dict>
 					<key>InertialScrollDelay</key>
-					<integer>15</integer>
+					<integer>10</integer>
 					<key>InertialScrollDepth</key>
 					<integer>3</integer>
 					<key>NoInertiaForHScroll</key>
@@ -1016,7 +1016,7 @@
 					<key>ScrollLevelFactor</key>
 					<integer>1</integer>
 					<key>ScrollLevelGranularity</key>
-					<integer>40</integer>
+					<integer>60</integer>
 					<key>ScrollMaxIdleDetectTimeout</key>
 					<integer>1000</integer>
 					<key>ScrollMaxIdleStateDelta</key>
