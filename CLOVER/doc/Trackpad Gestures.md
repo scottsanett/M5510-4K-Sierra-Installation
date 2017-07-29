@@ -7,8 +7,8 @@
 
 
 ###Presses:
-* 4 finger press: launchpad
-* 5 finger press: application windows
+* 4 finger press: application windows
+* 5 finger press: launchpad
 
 ###Pinches:
 * 5 finger pinch: quit application (CMD + Q)
@@ -16,9 +16,9 @@
 ###Swipes:
 ####Edge:
 * top edge swipe down: mission control
-* bottom edge swipe up: application switcher
+* bottom edge swipe up: show desktop
 * right edge swipe left: notification enter
-* left edge swipe right: show desktop
+* left edge swipe right: application switcher
 
 ####3 Fingers:
 * 3 finger swipe left: go forward (in safari/finder or other apps that support it)
