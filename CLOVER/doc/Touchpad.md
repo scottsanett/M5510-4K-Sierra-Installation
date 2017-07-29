@@ -17,17 +17,17 @@ ApplePS2SmartTouchpad offers 2 types of scrolling: 2 finger scroll and edge scro
 
 ### Presses:
 * 4 finger press: application windows
-* 5 finger press: launchpad
+* 5 finger press: toggle launchpad
 
 ### Pinches:
 * 5 finger pinch: CMD + Q (Quit application)
 
 ### Swipes:
 #### Edge:
-* top edge swipe down: mission control
-* bottom edge swipe up: show desktop
-* right edge swipe left: notification enter
-* left edge swipe right: application switcher
+* top edge swipe down: toggle mission control
+* bottom edge swipe up: toggle show desktop
+* right edge swipe left: toggle notification enter
+* left edge swipe right: toggle application switcher
 
 #### 3 Fingers:
 * 3 finger swipe left: go forward (in safari/finder or other apps that support it)
