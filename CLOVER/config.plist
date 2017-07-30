@@ -609,6 +609,8 @@
 		<string>Macintosh HD</string>
 		<key>Legacy</key>
 		<string>LegacyBiosDefault</string>
+		<key>NeverHibernate</key>
+		<true/>
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
@@ -725,7 +727,7 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<string>13</string>
+			<string>Detect</string>
 		</dict>
 		<key>USB</key>
 		<dict>
@@ -734,7 +736,7 @@
 			<key>FixOwnership</key>
 			<true/>
 			<key>Inject</key>
-			<false/>
+			<true/>
 		</dict>
 	</dict>
 	<key>DisableDrivers</key>
