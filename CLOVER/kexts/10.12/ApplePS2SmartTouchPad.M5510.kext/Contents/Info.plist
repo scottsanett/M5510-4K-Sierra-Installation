@@ -712,7 +712,7 @@
 					<key>4FingersPinchAction</key>
 					<integer>0</integer>
 					<key>5FingersPinchAction</key>
-					<integer>29</integer>
+					<integer>0</integer>
 					<key>CircularRotate</key>
 					<false/>
 					<key>DisableTPadOnLIDClose</key>
@@ -802,7 +802,7 @@
 					<key>RotationMaxCFingDelta</key>
 					<integer>100</integer>
 					<key>RotationMinCFingIdleTime</key>
-					<integer>200</integer>
+					<integer>50</integer>
 					<key>TPadStatusCheckPollRate</key>
 					<integer>1500</integer>
 					<key>UseSynapticsGenericBounds</key>
@@ -848,7 +848,7 @@
 						<key>MouseMode</key>
 						<integer>800</integer>
 						<key>Synaptics</key>
-						<integer>2400</integer>
+						<integer>1400</integer>
 					</dict>
 					<key>PointerSmoothLevel</key>
 					<integer>7</integer>
@@ -1016,7 +1016,7 @@
 					<key>ScrollLevelFactor</key>
 					<integer>1</integer>
 					<key>ScrollLevelGranularity</key>
-					<integer>60</integer>
+					<integer>40</integer>
 					<key>ScrollMaxIdleDetectTimeout</key>
 					<integer>1000</integer>
 					<key>ScrollMaxIdleStateDelta</key>
@@ -1115,9 +1115,9 @@
 						<key>FocalTech</key>
 						<integer>20</integer>
 						<key>Synaptics</key>
-						<integer>40</integer>
+						<integer>50</integer>
 						<key>SynapticsClickPad</key>
-						<integer>30</integer>
+						<integer>40</integer>
 					</dict>
 					<key>1FingerTapAction</key>
 					<integer>35</integer>
