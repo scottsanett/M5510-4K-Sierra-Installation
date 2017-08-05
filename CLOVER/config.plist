@@ -607,19 +607,21 @@
 		<false/>
 		<key>DefaultVolume</key>
 		<string>Macintosh HD</string>
+		<key>Fast</key>
+		<true/>
 		<key>Legacy</key>
 		<string>LegacyBiosDefault</string>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
 		<false/>
-		<key>Timeout</key>
-		<integer>5</integer>
 		<key>XMPDetection</key>
 		<string>Yes</string>
 	</dict>
 	<key>CPU</key>
 	<dict>
+		<key>HWPEnable</key>
+		<true/>
 		<key>UseARTFrequency</key>
 		<false/>
 	</dict>
@@ -1089,31 +1091,31 @@
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>IM171.88Z.0106.B01.1706260138</string>
+		<string>MBP133.88Z.0227.B01.1706260154</string>
 		<key>Board-ID</key>
-		<string>Mac-B809C3757DA9BB8D</string>
+		<string>Mac-A5C67F76ED83108C</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>ChassisAssetTag</key>
-		<string>iMac-Aluminum</string>
+		<string>MacBook-Aluminum</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
-		<string>0x13</string>
+		<string>0x09</string>
 		<key>Family</key>
-		<string>iMac17,1</string>
+		<string>MacBook Pro</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
 		<key>Mobile</key>
-		<false/>
+		<true/>
 		<key>ProductName</key>
-		<string>iMac17,1</string>
+		<string>MacBookPro13,3</string>
 		<key>SerialNumber</key>
-		<string>C02QMNHKH2YQ</string>
+		<string>C02SLHACGTFN</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
