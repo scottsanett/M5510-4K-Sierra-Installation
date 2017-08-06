@@ -10,13 +10,13 @@ ApplePS2SmartTouchpad offers 2 types of scrolling: 2 finger scroll and edge scro
 ## Gestures
 ### Taps:
 * 2 finger tap: right click 
-* 3 finger tap: quick look / preview / look up in the dictionary
+* 3 finger tap: middle click
 * 4 finger tap: CMD + H (Hide window)
 * 5 finger tap: CMD + W (Close window (or tab in tabbed applications (which could potentially crash safari)))
 
 
 ### Presses:
-* 4 finger press: application windows
+* 4 finger press: quick look / preview / look up in the dictionary
 * 5 finger press: toggle launchpad
 
 ### Pinches:
