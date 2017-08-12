@@ -673,7 +673,7 @@
 					<key>3FingersPressAction</key>
 					<integer>0</integer>
 					<key>4FingersPressAction</key>
-					<integer>8</integer>
+					<integer>25</integer>
 					<key>5FingersPressAction</key>
 					<integer>5</integer>
 					<key>FingersPressTimeOut</key>

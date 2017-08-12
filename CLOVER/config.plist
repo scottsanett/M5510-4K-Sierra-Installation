@@ -738,7 +738,7 @@
 			<key>FixOwnership</key>
 			<true/>
 			<key>Inject</key>
-			<true/>
+			<false/>
 		</dict>
 	</dict>
 	<key>DisableDrivers</key>
@@ -1096,6 +1096,8 @@
 		<string>Mac-A5C67F76ED83108C</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
+		<key>BoardSerialNumber</key>
+		<string>C02420304DCFJYL14</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>ChassisAssetTag</key>
@@ -1114,8 +1116,6 @@
 		<true/>
 		<key>ProductName</key>
 		<string>MacBookPro13,3</string>
-		<key>SerialNumber</key>
-		<string>C02SLHACGTFN</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
