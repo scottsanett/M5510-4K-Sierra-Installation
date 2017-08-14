@@ -1018,7 +1018,7 @@
 					<key>ScrollLevelGranularity</key>
 					<integer>40</integer>
 					<key>ScrollMaxIdleDetectTimeout</key>
-					<integer>500</integer>
+					<integer>1000</integer>
 					<key>ScrollMaxIdleStateDelta</key>
 					<integer>10</integer>
 					<key>ScrollResolution</key>
