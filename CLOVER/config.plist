@@ -607,14 +607,14 @@
 		<false/>
 		<key>DefaultVolume</key>
 		<string>Macintosh HD</string>
-		<key>Fast</key>
-		<true/>
 		<key>Legacy</key>
 		<string>LegacyBiosDefault</string>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
 		<false/>
+		<key>Timeout</key>
+		<integer>5</integer>
 		<key>XMPDetection</key>
 		<string>Yes</string>
 	</dict>
@@ -1083,58 +1083,52 @@
 		<string>C02420304DCFJYL14</string>
 		<key>ROM</key>
 		<data>
-		+zgsWGH7
+		KAtcUrNi
 		</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>08/08/2017</string>
+		<string>06/26/2017</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP111.88Z.0142.B00.1708080655</string>
+		<string>MBP133.88Z.0227.B01.1706260154</string>
 		<key>Board-ID</key>
-		<string>Mac-189A3D4F975D5FFC</string>
+		<string>Mac-A5C67F76ED83108C</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02447902J9F502AD</string>
+		<string>C02420304DCFJYL14</string>
 		<key>BoardType</key>
 		<integer>10</integer>
-		<key>BoardVersion</key>
-		<string>MacBookPro11,1</string>
 		<key>ChassisAssetTag</key>
 		<string>MacBook-Aluminum</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
-		<string>0x0A</string>
+		<string>0x09</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
-		<key>FirmwareFeatures</key>
-		<string>0xE80FE137</string>
-		<key>FirmwareFeaturesMask</key>
-		<string>0xFF1FFF3F</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
 		<key>Mobile</key>
 		<true/>
-		<key>PlatformFeature</key>
-		<string>0x02</string>
 		<key>ProductName</key>
-		<string>MacBookPro11,1</string>
+		<string>MacBookPro13,3</string>
 		<key>SerialNumber</key>
-		<string>C02NR1INFH00</string>
+		<string>C02MQ60QFGYY</string>
+		<key>SmUUID</key>
+		<string>6CFE5564-2280-58EC-B0A9-A8F9BE5EE6EF</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>CustomUUID</key>
-		<string>D3E9B060-1088-4C80-98AA-822AC5214A57</string>
+		<string>52D5EB8C-2E10-F25F-912B-5613F35861FB</string>
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>
