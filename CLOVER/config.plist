@@ -607,14 +607,14 @@
 		<false/>
 		<key>DefaultVolume</key>
 		<string>Macintosh HD</string>
+		<key>Fast</key>
+		<true/>
 		<key>Legacy</key>
 		<string>LegacyBiosDefault</string>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
 		<false/>
-		<key>Timeout</key>
-		<integer>5</integer>
 		<key>XMPDetection</key>
 		<string>Yes</string>
 	</dict>
@@ -1083,50 +1083,74 @@
 		<string>C02420304DCFJYL14</string>
 		<key>ROM</key>
 		<data>
+<<<<<<< HEAD
 		hYS7WGH7
+=======
+		+zgsWGH7
+>>>>>>> parent of a0cde6e... reverted SMBIOS to MBP13,3
 		</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>06/26/2017</string>
+		<string>08/08/2017</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP133.88Z.0227.B01.1706260154</string>
+		<string>MBP111.88Z.0142.B00.1708080655</string>
 		<key>Board-ID</key>
-		<string>Mac-A5C67F76ED83108C</string>
+		<string>Mac-189A3D4F975D5FFC</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
+<<<<<<< HEAD
 		<string>C027425004NDM668C</string>
+=======
+		<string>C02447902J9F502AD</string>
+>>>>>>> parent of a0cde6e... reverted SMBIOS to MBP13,3
 		<key>BoardType</key>
 		<integer>10</integer>
+		<key>BoardVersion</key>
+		<string>MacBookPro11,1</string>
 		<key>ChassisAssetTag</key>
 		<string>MacBook-Aluminum</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
-		<string>0x09</string>
+		<string>0x0A</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
+		<key>FirmwareFeatures</key>
+		<string>0xE80FE137</string>
+		<key>FirmwareFeaturesMask</key>
+		<string>0xFF1FFF3F</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
 		<key>Mobile</key>
 		<true/>
+		<key>PlatformFeature</key>
+		<string>0x02</string>
 		<key>ProductName</key>
-		<string>MacBookPro13,3</string>
+		<string>MacBookPro11,1</string>
 		<key>SerialNumber</key>
+<<<<<<< HEAD
 		<string>C02VL2BEGTFN</string>
+=======
+		<string>C02NR1INFH00</string>
+>>>>>>> parent of a0cde6e... reverted SMBIOS to MBP13,3
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>CustomUUID</key>
+<<<<<<< HEAD
 		<string>DEF9339B-3CA4-4376-866B-45D25D69AAF9</string>
+=======
+		<string>D3E9B060-1088-4C80-98AA-822AC5214A57</string>
+>>>>>>> parent of a0cde6e... reverted SMBIOS to MBP13,3
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>
