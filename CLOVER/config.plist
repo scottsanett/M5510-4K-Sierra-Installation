@@ -16,6 +16,8 @@
 				<true/>
 				<key>FIX_TMR_40000</key>
 				<true/>
+				<key>FixHeaders_20000000</key>
+				<true/>
 				<key>FixIPIC_0040</key>
 				<true/>
 				<key>FixShutdown_0004</key>
@@ -151,16 +153,16 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Rename Method GPRW,02 to Method XPRW,02 and need add-on  SSDT-PRW.aml</string>
+					<string>Change H_EC to EC</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					R1BSVwJwaA==
+					SF9FQw==
 					</data>
 					<key>Replace</key>
 					<data>
-					WFBSVwJwaA==
+					RUNfXw==
 					</data>
 				</dict>
 				<dict>
@@ -175,6 +177,20 @@
 					<key>Replace</key>
 					<data>
 					SFM5Mg==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change ECDV to EC</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUNEVg==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUNfXw==
 					</data>
 				</dict>
 				<dict>
@@ -602,13 +618,13 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 nv_disable=1 kext-dev-mode=1 slide=146</string>
-		<key>Debug</key>
-		<false/>
+		<string>-v dart=0 nv_disable=1 kext-dev-mode=1 slide=144</string>
 		<key>DefaultVolume</key>
 		<string>Macintosh HD</string>
 		<key>Legacy</key>
 		<string>LegacyBiosDefault</string>
+		<key>Log</key>
+		<false/>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
@@ -647,6 +663,18 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Key</key>
+				<string>AAPL00,PanelPowerUp</string>
+				<key>Value</key>
+				<data>
+				MAAAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>IntelGFX</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
 				<string>AAPL00,PanelPowerOn</string>
 				<key>Value</key>
 				<data>
@@ -659,10 +687,10 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Key</key>
-				<string>AAPL,GfxYTile</string>
+				<string>AAPL00,PanelPowerOff</string>
 				<key>Value</key>
 				<data>
-				AQAAAA==
+				EQAAAA==
 				</data>
 			</dict>
 			<dict>
@@ -671,10 +699,10 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Key</key>
-				<string>AAPL00,PanelPowerUp</string>
+				<string>AAPL,GfxYTile</string>
 				<key>Value</key>
 				<data>
-				MAAAAA==
+				AQAAAA==
 				</data>
 			</dict>
 			<dict>
@@ -699,18 +727,6 @@
 				<key>Value</key>
 				<data>
 				AQAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>IntelGFX</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>AAPL00,PanelPowerOff</string>
-				<key>Value</key>
-				<data>
-				EQAAAA==
 				</data>
 			</dict>
 			<dict>
@@ -747,6 +763,8 @@
 	</array>
 	<key>GUI</key>
 	<dict>
+		<key>#ScreenResolution</key>
+		<string>1920x1080</string>
 		<key>Custom</key>
 		<dict>
 			<key>Entries</key>
@@ -771,14 +789,8 @@
 		<string>en:0</string>
 		<key>Mouse</key>
 		<dict>
-			<key>DoubleClick</key>
-			<integer>500</integer>
 			<key>Enabled</key>
 			<false/>
-			<key>Mirror</key>
-			<false/>
-			<key>Speed</key>
-			<integer>8</integer>
 		</dict>
 		<key>Scan</key>
 		<dict>
@@ -796,6 +808,11 @@
 	</dict>
 	<key>Graphics</key>
 	<dict>
+		<key>EDID</key>
+		<dict>
+			<key>Inject</key>
+			<false/>
+		</dict>
 		<key>Inject</key>
 		<dict>
 			<key>ATI</key>
@@ -805,8 +822,6 @@
 			<key>NVidia</key>
 			<false/>
 		</dict>
-		<key>NvidiaSingle</key>
-		<false/>
 		<key>ig-platform-id</key>
 		<string>0x191b0000</string>
 	</dict>
@@ -816,18 +831,12 @@
 		<true/>
 		<key>AppleRTC</key>
 		<true/>
-		<key>Debug</key>
-		<false/>
 		<key>DellSMBIOSPatch</key>
-		<false/>
+		<true/>
 		<key>ForceKextsToLoad</key>
 		<array>
 			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
 		</array>
-		<key>KernelCpu</key>
-		<false/>
-		<key>KernelHaswellE</key>
-		<false/>
 		<key>KernelLapic</key>
 		<true/>
 		<key>KernelPm</key>
@@ -844,7 +853,7 @@
 				ILniAAAADzA=
 				</data>
 				<key>MatchOS</key>
-				<string>10.12</string>
+				<string>10.12.x,10.13.x</string>
 				<key>Replace</key>
 				<data>
 				ILniAAAAkJA=
@@ -863,10 +872,74 @@
 				AEFQUExFIFNTRAA=
 				</data>
 				<key>Name</key>
-				<string>IOAHCIBlockStorage</string>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
 				<key>Replace</key>
 				<data>
 				AAAAAAAAAAAAAAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.12 fudge USB 3.1 device ID,15b68086 -&gt; 15b58086</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<string>30783135623638303836</string>
+				<key>InfoPlistPatch</key>
+				<true/>
+				<key>Name</key>
+				<string>AppleUSBXHCIPCI</string>
+				<key>Replace</key>
+				<string>30783135623538303836</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Bypass ThunderBolt3 SkipEnumeration credit kid2010 implemented by syscl</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				VUiJ5UFXQVZBVUFUU0iB7DgB
+				</data>
+				<key>MatchOS</key>
+				<string>10.12.x</string>
+				<key>Name</key>
+				<string>IOThunderboltFamily</string>
+				<key>Replace</key>
+				<data>
+				VUiJ5THAXcNBVUFUU0iB7DgB
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>change F%uT%04x to F%uTxxxx in AppleBacklightInjector.kext (credit RehabMan)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				RiV1VCUwNHgA
+				</data>
+				<key>Name</key>
+				<string>com.apple.driver.AppleBacklight</string>
+				<key>Replace</key>
+				<data>
+				RiV1VHh4eHgA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>eDP, port 0000, 0x191e0000, 0x19160000, 0x19260000, 0x19270000, 0x191b0000, 0x19160002, 0x19260002, 0x191e0003, 0x19260004, 0x19270004, 0x193b0005 credit syscl</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AAAIAAIAAACYAAAAAQUJAAAEAAA=
+				</data>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				AAAIAAAEAACYAAAAAQUJAAAEAAA=
 				</data>
 			</dict>
 			<dict>
@@ -889,118 +962,20 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>AppleHDA#4</string>
+				<string>Boot graphics glitch, 10.13 beta (based on deskop patch)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				hQjsEA==
-				</data>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>
-				AAAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Bypass ThunderBolt3 SkipEnumeration credit kid2010 implemented by syscl</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				VUiJ5UFXQVZBVUFUU0iB7DgB
+				AQAAdSI=
 				</data>
 				<key>MatchOS</key>
-				<string>10.12.x</string>
+				<string>10.13.x</string>
 				<key>Name</key>
-				<string>IOThunderboltFamily</string>
+				<string>com.apple.iokit.IOGraphicsFamily</string>
 				<key>Replace</key>
 				<data>
-				VUiJ5THAXcNBVUFUU0iB7DgB
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Boot graphics glitch, 10.10.x/10.11.x (credit lisai9093, cecekpawon)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AQAAdRc=
-				</data>
-				<key>MatchOS</key>
-				<string>10.10.x,10.11.x</string>
-				<key>Name</key>
-				<string>IOGraphicsFamily</string>
-				<key>Replace</key>
-				<data>
-				AQAA6xc=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Skylake minStolenSize patch (credit RehabMan based on original by Austere.J)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				iUXIOcZ2UQ==
-				</data>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>AppleIntelSKLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				iUXIOcZ2UQ==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>eDP, port 0000, 0x191e0000, 0x19160000, 0x19260000, 0x19270000, 0x191b0000, 0x19160002, 0x19260002, 0x191e0003, 0x19260004, 0x19270004, 0x193b0005 credit syscl</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AAAIAAIAAACYAAAAAQUJAAAEAAA=
-				</data>
-				<key>Name</key>
-				<string>AppleIntelSKLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				AAAIAAAEAACYAAAAAQUJAAAEAAA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>10.12 fudge USB 3.1 device ID,15b68086 -&gt; 15b58086</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<string>30783135623638303836</string>
-				<key>InfoPlistPatch</key>
-				<true/>
-				<key>Name</key>
-				<string>AppleUSBXHCIPCI</string>
-				<key>Replace</key>
-				<string>30783135623538303836</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>AppleHDA#2</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				QcYGAEiLu2g=
-				</data>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>
-				QcYGAUiLu2g=
+				AQAA6yI=
 				</data>
 			</dict>
 			<dict>
@@ -1041,18 +1016,18 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>AppleHDA#6</string>
+				<string>AppleHDA#2</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				hBnUEQ==
+				QcYGAEiLu2g=
 				</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
 				<data>
-				mALsEA==
+				QcYGAUiLu2g=
 				</data>
 			</dict>
 			<dict>
@@ -1071,6 +1046,38 @@
 				QcaGQwEAAAE=
 				</data>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>AppleHDA#4</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				hQjsEA==
+				</data>
+				<key>Name</key>
+				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>
+				AAAAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>AppleHDA#6</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				hBnUEQ==
+				</data>
+				<key>Name</key>
+				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>
+				mALsEA==
+				</data>
+			</dict>
 		</array>
 	</dict>
 	<key>RtVariables</key>
@@ -1083,25 +1090,27 @@
 		<string>C02420304DCFJYL14</string>
 		<key>ROM</key>
 		<data>
-		hYS7WGH7
+		/9LgXubv
 		</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>06/26/2017</string>
+		<string>08/08/2017</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP133.88Z.0227.B01.1706260154</string>
+		<string>MBP133.88Z.0233.B00.1708080034</string>
 		<key>Board-ID</key>
 		<string>Mac-A5C67F76ED83108C</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C027425004NDM668C</string>
+		<string>C02653200OPF2FR1F</string>
 		<key>BoardType</key>
 		<integer>10</integer>
+		<key>BoardVersion</key>
+		<string>MacBookPro13,3</string>
 		<key>ChassisAssetTag</key>
 		<string>MacBook-Aluminum</string>
 		<key>ChassisManufacturer</key>
@@ -1110,23 +1119,33 @@
 		<string>0x09</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
+		<key>FirmwareFeatures</key>
+		<string>0xFC0FE13E</string>
+		<key>FirmwareFeaturesMask</key>
+		<string>0xFF1FFF3F</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
 		<key>Mobile</key>
 		<true/>
+		<key>PlatformFeature</key>
+		<string>0x1A</string>
 		<key>ProductName</key>
 		<string>MacBookPro13,3</string>
 		<key>SerialNumber</key>
-		<string>C02VL2BEGTFN</string>
+		<string>C02SX1XOGTFN</string>
+		<key>SmUUID</key>
+		<string>6CFE5564-2280-58EC-B0A9-A8F9BE5EE6EF</string>
+		<key>Trust</key>
+		<true/>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>CustomUUID</key>
-		<string>DEF9339B-3CA4-4376-866B-45D25D69AAF9</string>
+		<string>21DA639D-A066-45DA-AE69-3B3CF3322328</string>
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>
